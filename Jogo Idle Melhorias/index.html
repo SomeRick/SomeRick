@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Idle: Teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button data-jogo="generator" class="generator">$</button>
+    <div data-jogo="money" class="money">Dinheiro: 0</div>
+    <button class="menuOpen buttonUI" data-jogo="openmenu">Loja De Geradores</button>
+    <button class="openClick buttonUI" data-jogo="openClick">Click Upgrades</button>
+    <button class="backMenu buttonUI" data-jogo="backMenu">Cores de Fundo</button>
+    <button class="botaoMenuPrincipal buttonUI" data-jogo="botaoMenuPrincipal">☰</button>
+    <div data-jogo="menu" class="menu">
+        <button class="upgrade01" data-jogo="upgrade01">Gerador Automático de Cobre: 40$ (1$/s)</button>
+        <button class="upgrade02" data-jogo="upgrade02">Gerador Automático de Prata: 150$ (3$/s)</button>
+        <button class="upgrade03" data-jogo="upgrade03">Gerador Automático de Ouro: 255$ (5$/s)</button>
+        <button class="upgrade04" data-jogo="upgrade04">Gerador Automático de Diamante: 1000$ (20$/s)</button>
+        <button class="upgrade05" data-jogo="upgrade05">Gerador Automático de Esmeralda: 1600$ (30$/s)</button>
+        <button class="upgrade06" data-jogo="upgrade06">Gerador Automático de Rubi: 2800$ (50$/s)</button>
+        <button class="upgrade07" data-jogo="upgrade07">Gerador Automático de Safira: 4000$ (70$/s)</button>
+    </div>
+    <div data-jogo="menuClick" class="menuClick">
+        <button class="click01" data-jogo="click01">Melhoria Click (5$)</button>
+        <button class="click02" data-jogo="click02">+</button>
+    </div>
+    <div data-jogo="themeMenu" class="themeMenu">
+        <button class="theme00" data-jogo="theme00">Fundo Padrão</button>
+        <button class="theme01" data-jogo="theme01">Fundo Verde (15.000$)</button>
+        <button class="theme02" data-jogo="theme02">Fundo Branco (25.000$)</button>
+        <button class="theme03" data-jogo="theme03">Fundo Degradê Ciano (40.000$)</button>
+    </div>
+    <section data-jogo="mainMenu" class="mainMenu">
+        <div class="modalMainMenu">
+            <input value="X" class="fecharMainMenu" data-jogo="fecharMainMenu"></input>
+            <div>
+                <button class="statisticsButton" data-jogo="statisticsButton">Estatísticas</button>
+                <button class="cheatsButton" data-jogo="cheatsButton">Cheats</button>
+                <button class="creditsButton" data-jogo="creditsButton">Créditos</button>
+                <button class="prestigioButton" data-jogo="prestigioButton">Prestígio</button>
+                <button class="metaLevelDinheiro" data-jogo="metaLevelDinheiro">Level</button>
+            </div>
+        </div>
+    </section>
+    <section class="statistics" data-jogo="statistics">
+        <div class="menuStatistic">
+            <input value="X" class="fecharStatistic" data-jogo="fecharStatistic"></input>
+            <div>
+            <p class="mps" data-jogo="mps">Ganho por sec (Geradores): </p>
+            <p class="ganhoClick" data-jogo="ganhoClick" id="ganhoClick">Ganho por click: </p>
+            <p class="fundoSite" data-jogo="fundoSite">Fundo atual: </p>
+            </div>
+        </div>
+    </section>
+    <section class="cheats" data-jogo="cheats">
+        <div class="menuCheats">
+            <button class="fecharCheats" data-jogo="fecharCheats">X</button>
+            <div>
+                <p>Insira o Cheat</p>
+                <input type="text" name="cheats" class="cheatInput">
+                <button class="inserirCheat" data-jogo="inserirCheat">Inserir</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/script.js"></script>
+</html>

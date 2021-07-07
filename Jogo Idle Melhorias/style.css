@@ -1,0 +1,391 @@
+body {
+    background: rgb(52, 58, 65);
+}
+
+.generator {
+    position: absolute;
+    background: red;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.25s;
+    box-shadow: 5px 5px 40px red;
+    font-size: 16px;
+}
+
+.generator:hover {
+    width: 90px;
+    height: 90px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.money {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.ativar {
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;   
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    transition: 0.50s;
+    columns: auto;
+    position: absolute;
+}
+
+.menu button {
+    position: relative; 
+    width: auto;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+    margin: 20px;
+    display: flex;
+    border: solid 2px rgb(52, 58, 65);
+    background: none;
+    transition: 0.40s;
+    color: white;
+    font-style: oblique;
+}
+
+.menu button:hover {
+    background: rgb(52, 58, 65);
+    cursor: pointer;
+}
+
+.menuOpen {
+    background: none;
+    border: 2px solid red;
+    color: white;
+    transition: 0.25s;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    font-size: 18px;
+}
+
+.menuOpen:hover {
+    background: red;
+    cursor: pointer;
+}
+
+.botaoMenuPrincipal {
+    background: none;
+    border: 2px solid red;
+    color: white;
+    transition: 0.25s;
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    align-items: left;
+    justify-content: left;
+    display: block;
+    left: 97%;
+    top: 4.5%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-weight: bold;
+}
+
+.botaoMenuPrincipal:hover {
+    background: red;
+    cursor: pointer;
+}
+
+.mainMenu {
+    display: none;
+}
+
+.statistics {
+    display: none;
+}
+
+.statistics.ativo {
+    display: flex;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .5);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.cheats {
+    display: none;
+}
+
+.cheats.ativo {
+    display: flex;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .5);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.menuCheats {
+    background: rgb(29, 62, 102);
+    min-width: 200px;
+    padding: 40px;
+    border: 10px solid gray;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.fecharCheats {
+    border: none;
+    background: red;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    text-align: center;
+    color: white;
+}
+
+.cheatInput {
+    background: none;
+    border: 2px solid orangered;
+    border-radius: 20px;
+    height: 20px;
+}
+
+.menuStatistic {
+    background: rgb(29, 62, 102);
+    min-width: 200px;
+    padding: 40px;
+    border: 10px solid gray;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.menuStatistic p {
+    transition: 0.35s;
+    height: 30px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    display: block;
+    margin: 20px auto;
+    background: none;
+    color: white;
+}
+
+.fecharStatistic {
+    border: none;
+    background: red;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    text-align: center;
+    color: white;
+}
+
+.fecharStatistic:hover {
+    cursor: pointer;
+}
+
+.mainMenu.ativo {
+    display: flex;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .5);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modalMainMenu {
+    background: rgb(29, 62, 102);
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid gray;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.modalMainMenu button {
+    transition: 0.35s;
+    height: 30px;
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(21, 26, 87);
+    display: block;
+    margin: 20px auto;
+    background: none;
+    color: white;
+}
+
+.modalMainMenu button:hover {
+    background: rgb(21, 26, 87);
+    width: 150px;
+    cursor: pointer;
+}
+
+.fecharMainMenu {
+    border: none;
+    background: red;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    text-align: center;
+    color: white;
+}
+
+.fecharMainMenu:hover {
+    cursor: pointer;
+}
+
+.menuClick {
+    display: none;
+}
+
+.menuClick.ativar {
+    display: flex;
+    width: auto;
+    height: auto;
+    text-align: center;   
+    background: rgba(0, 0, 0, .5);
+    transition: 0.50s;
+    columns: auto;
+    position: absolute;
+}
+
+.menuClick button {
+    position: relative; 
+    width: 100px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+    margin: 20px auto;
+    display: block;
+    border: solid 2px rgb(52, 58, 65);
+    background: none;
+    transition: 0.40s;
+    color: white;
+}
+
+.menuClick button:hover {
+    background: rgb(52, 58, 65);
+    cursor: pointer;
+}
+
+.openClick {
+    background: none;
+    border: 2px solid red;
+    color: white;
+    transition: 0.25s;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    font-size: 18px;
+}
+
+.openClick:hover {
+    background: red;
+    cursor: pointer;
+}
+
+.backMenu {
+    background: none;
+    border: 2px solid red;
+    color: white;
+    transition: 0.25s;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    font-size: 18px;
+}
+
+.backMenu:hover {
+    background: red;
+    cursor: pointer;
+}
+
+.themeMenu {
+    display: none;
+}
+
+.themeMenu.ativo {
+    display: flex;
+    width: auto;
+    height: auto;
+    text-align: center;   
+    background: rgba(0, 0, 0, .5);
+    transition: 0.50s;
+    columns: auto;
+    position: absolute;
+}
+
+.themeMenu button {
+    position: relative; 
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+    margin: 20px auto;
+    display: block;
+    border: solid 2px rgb(52, 58, 65);
+    background: none;
+    transition: 0.40s;
+    color: white;
+}
+
+.themeMenu button:hover {
+    background: rgb(52, 58, 65);
+    cursor: pointer;
+}
